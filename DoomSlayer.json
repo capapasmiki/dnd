@@ -1,0 +1,243 @@
+{
+	"monster": [
+		{
+			"name": "Doom Slayer",
+			"isNamedCreature": true,
+			"source": "",
+			"page": 0,
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"{@item plate armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 725,
+				"formula": "50d8 + 500"
+			},
+			"speed": {
+				"walk": 150
+			},
+			"str": 30,
+			"dex": 24,
+			"con": 30,
+			"int": 18,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"str": "+19",
+				"dex": "+16",
+				"con": "+19",
+				"int": "+12",
+				"wis": "+12"
+			},
+			"skill": {
+				"perception": "+21",
+				"acrobatics": "+25",
+				"athletics": "+28",
+				"intimidation": "+21"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 31,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing damage"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"cr": "32",
+			"trait": [
+				{
+					"name": "Badass Incarnate",
+					"entries": [
+						"Doom Slayer is an absolute badass and has advantage on intimidation checks against any creature, even creatures that are otherwise immune or does not understand what intimidation mean. Creatures that are within 30 feet and can see Doom Slayer must succeed on a {@dc 20} Wisdom saving throw or be {@condition paralyzed} until the start of their next turn in which they need to repeat the saving throw. Creatures that succeed on their saving throw is immune to this effect for 24 hours."
+					]
+				},
+				{
+					"name": "Destruction Empowerment",
+					"entries": [
+						"When Doom Slayer slays a fiend he gains powerful bonuses that temporarily empower him. The Doom Slayer can choose what bonus he recieves.",
+						"Demonic Burst:** The Doom Slayer's next melee attack deals an additional 22 ({@damage 4d10}) necrotic damage plus 22 ({@damage 4d10}) fire damage. This additional damage lasts for 1 minute or until it is used. The additional damage is tripled if he uses it against a fiend.",
+						"Superhuman Strength:** When Doom Slayer does a melee attack, he deals an extra 33 ({@damage 6d10}) bludgeoning damage. The creature hit must also succeed on a {@dc 27} Constitution saving throw or be {@condition stunned} until the end of Doom Slayer's next turn.",
+						"Stolen Vigor:** Doom Slayer regenerates (10 X Fiend's CR)  hit points."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"When Doom Slayer is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, he insteads take no damage if he succeeds on the saving throw, and only half damage if he fails."
+					]
+				},
+				{
+					"name": "Glory Kill",
+					"entries": [
+						"If Doom Slayer successfully hits a creature, with 50 hit points or lower, with a melee attack, he brutally executes them, immediately killing them."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Doom Slayer fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Limited Magical Immunity",
+					"entries": [
+						"Doomslayer is immune to spells of 5th level or lower unless he wishes to be affected. He has advantage on saving throws against all other spells and magical effects, except spells and magical effects that can banish or teleport him."
+					]
+				},
+				{
+					"name": "Magical Weapons",
+					"entries": [
+						"Doom Slayer's weapon attacks are magical. While in combat, Doom Slayer is able to use all his weapons without having to switch. In addition, his weapons are kept in a space that he can access."
+					]
+				},
+				{
+					"name": "Superhuman Abilities",
+					"entries": [
+						"Doom Slayer counts as three times larger in terms of size when determining his carrying capacity and the weight he can push, drag, or lift. When determining Doom Slayer's jumping capability it is twice than usual. When Doom Slayer takes the dash action his speed is tripled instead of doubled. When Doom Slayer takes the dodge action he gains a +5 to his AC until the start of his next turn."
+					]
+				},
+				{
+					"name": "Too Angry to Die",
+					"entries": [
+						"If Doom Slayer is {@condition grappled}, {@condition paralyzed}, {@condition petrified}, knocked {@condition prone}, {@condition restrained}, {@condition stunned} or {@condition unconscious}, he can use a remaining action, bonus action, legendary action or reaction to end the effect on himself. He can only end one condition with one action but he can choose to end multiple conditions by using multiple actions. If Doom Slayer is reduced to 0 hit points and doesn't die outright, he can make a {@dc 10} Constitution saving throw. If he succeeds, he drops to 1 hit point instead. He can use this feature every time he drops to 0 hit points but the DC increases by 5 each time which resets after a long rest. In addition, if Doom Slayer succeeds, he gets to use his *Destruction Empowerment* as if he's killed a CR 5 fiend."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Doom Slayer makes 4 slam attacks or uses any of his other weapons which are specified in the weapon page."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. *Hit* 15 ({@damage 1d10 + 10}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "BFG 9000 (1/Day)",
+					"entries": [
+						"Doom Slayer hefts the BFG 9000 and shoots a powerful blast of raw energy at a point within 120 feet of him that he can see. Each creature in a 30-foot radius Sphere centered on that point must succeed on a {@dc 20} Dexterity saving throw, taking 178 ({@damage 12d12 + 100}) force damage on a failed save, or half as much damage on a successful one. If this damage reduces the target to 0 Hit Points, it is disintegrated. This spell automatically disintegrates a Huge or smaller nonmagical object or a Creation of magical force. If the target is a Gargantuan object or Creation of force, this spell disintegrates a 20-foot-cube portion of it. A magic item is unaffected.",
+						"Bonus Action"
+					]
+				},
+				{
+					"name": "Frag Grenade",
+					"entries": [
+						"Doom Slayer throws a grenade at a point within 120 feet of him that he can see that explodes on contact. Each creature in a 10-foot radius sphere centered on that point must succeed on a {@dc 20} Dexterity saving throw, taking 14 ({@damage 4d6}) fire damage plus 14 ({@damage 4d6}) piercing damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "",
+					"entries": [
+						"Doom Slayer can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Doom Slayer regains spent legendary actions at the start of his turn."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Doom Slayer moves up to his speed."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Doom Slayer makes a slam attack."
+					]
+				},
+				{
+					"name": "Gunplay (Dependent on the weapon)",
+					"entries": [
+						"Doom Slayer makes a single ranged weapon attack that's specified in the weapon page."
+					]
+				},
+				{
+					"name": "Perfect Manuever (Costs 2 Actions)",
+					"entries": [
+						"Doom Slayer moves up to his speed and makes 2 slam attacks. In addition, he doesn't incur opportunity attacks while moving this way."
+					]
+				},
+				{
+					"name": "Rage Induced Attack (Costs 3 Actions)",
+					"entries": [
+						"Doom Slayer brutally attacks a creature within melee range and the creature must succeed on a {@dc 27} Strength saving throw, taking 54 ({@damage 8d10 + 10}) bludgeoning damage and be {@condition stunned} for 1 minute on a failed saving throw, or take half as much damage and not be {@condition stunned}. A creature can repeat the saving throw at the start of their turn, ending the effect on themselves on a success."
+					]
+				},
+				{
+					"name": "Rip and Tear (Costs 4 Actions)",
+					"entries": [
+						"Doom Slayer moves up to his speed and attacks a creature within melee range. The creature must succeed on a {@dc 27} Dexterity saving throw, taking 75 ({@damage 10d12 + 10}) bludgeoning damage on a failed save, or no damage on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"stunned"
+			]
+		}
+	]
+}
